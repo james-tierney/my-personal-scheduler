@@ -1,12 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
-
+import logo from '.././logo.svg';
+import '.././App.css';
+import { Button } from './Button';
 
 import React, { useState } from 'react';
 
 const Item = () => {
     const [item, setItem] = useState("");
-    console.log("hello world");
+    
   return (
       
     <div className="Item">
@@ -19,6 +19,7 @@ const Item = () => {
               setItem(evt.target.value);
           }}
       />
+      <Button className="CompleteButton" text="✓"/>
       
     <h3>Your item scheduled is: {item}</h3>
     
