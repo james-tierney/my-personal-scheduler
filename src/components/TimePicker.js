@@ -4,7 +4,7 @@ import { Button } from './Button';
 import React, { useEffect, useState } from 'react';
 
 
-const TimePicker = () => {
+const TimePicker = (props) => {
   // could just create current time varibale and set default value to that?
     const [time, setTime] = useState(new Date("HH:mm"));
     
@@ -19,8 +19,9 @@ const TimePicker = () => {
     
   return (
       
-    <div className="Time">
+    <div className={props.className}>
     
+      <p><b>{props.label}</b></p>
       <input 
           type="time"
           

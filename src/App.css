@@ -30,6 +30,25 @@
   flex-direction: row;
 }
 
+.FinishTime, .Time  {
+  float: left;
+  margin: 0.2rem;
+}
+
+
+.Item {
+  display: auto;
+}
+
+.Times {
+    margin: auto;
+    width: auto;
+    border: 5px solid #FF0000;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
 .CompleteButton {
   width: auto;
   background-color: #00ce00;
